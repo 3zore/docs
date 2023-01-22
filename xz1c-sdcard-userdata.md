@@ -11,3 +11,9 @@ BLU済みのxz1c
 1, twrpにて、```wipe→advanced wipe→micro sdcard```を選択し、```repair or change File System→change file system→f2fs```  
 2, romをインストール  
 3, 終わり
+
+## ???
+ぶっちゃけこんなの、/vendor/etc/fstab.lilacをいじっただけなので、多分他のデバイスでもできます  
+```
+/dev/block/mmcblk0p1               /data        f2fs    rw,noatime,nosuid,nodev,discard,nobarrier,inline_xattr,inline_data    wait,check,formattable
+```
